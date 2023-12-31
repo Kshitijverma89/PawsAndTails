@@ -1,0 +1,40 @@
+/* HeroSection.css */
+
+.product-card {
+    border: none;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for both transform and box-shadow */
+  
+  
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 20); /* Increase shadow on hover */
+  }
+  
+  /* .card {
+    background: linear-gradient(to bottom right, #ffccd7, #ff9aaf);
+  }
+  
+  .card-2 {
+    background: linear-gradient(to bottom right, #b3c6ff, #859aff);
+  }
+  
+  .card-3 {
+    background: linear-gradient(to bottom right, #c6ffb3, #89ff7f);
+  }
+  
+  .card-4 {
+    background: linear-gradient(to bottom right, #ffd966, #ffbf66);
+  } */
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 19); /* Increase shadow on hover */
+  }
+  
+  
+
+ 

@@ -1,0 +1,103 @@
+/* Cart.css */
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Adjust heading styles */
+  h2 {
+    text-align: center;
+    color: #343a40;
+  }
+  
+  /* Apply some padding to the table */
+  .table {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px; /* Add some padding for better spacing */
+  }
+  
+  /* Center the content in table cells */
+  th, td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  /* Style the product images */
+  .product-image {
+    max-width: 80px; /* Adjust image size for better fit */
+    max-height: 80px;
+    border-radius: 5px;
+  }
+  
+  /* Style the quantity input */
+  input[type="number"] {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+  }
+  
+  /* Style the total section */
+  .total {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: right;
+    color: #007bff;
+  }
+  
+  /* Style the remove button */
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  /* Style the checkout button */
+  .btn-checkout {
+    background-color: peachpuff;
+    color: black;
+    border: 1px solid black; /* Add border for better visibility */
+    padding: 8px 16px; /* Add padding for a larger button */
+    margin-top: 10px; /* Add some space between the buttons */
+  }
+  
+  /* Change button color on hover */
+  .btn-checkout:hover {
+    color: aqua;
+  }
+  
+  /* Style the background */
+  body {
+    background-color: gray; /* Change background color to black */
+  }
+  
+  /* Style the order summary box */
+  .order-summary-box {
+    border: 2px solid #ddd;
+    padding: 15px; /* Increase padding for better spacing */
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+  }
+  
+  /* Style the order summary heading */
+  .order-summary h3 {
+    margin-bottom: 10px;
+    color: orangered;
+    text-align: left;
+  }
+  
+  /* Style the order summary details */
+  .order-summary div {
+    margin-bottom: 10px;
+    text-align: left;
+    color: white; /* Change text color for better readability */
+  }
+  
