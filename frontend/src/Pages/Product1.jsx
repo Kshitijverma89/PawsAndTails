@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import './Product1.css'
-import ProductCards from '../Components/ProductCards';
+import ProductCards from '../components/ProductCards';
 import { useEffect } from 'react';
 import useFetch from "../hooks/useFetch";
 import { Container, Row, Col} from "reactstrap";
 
-const ProductPage = () => {
+const ProductPage = ({category}) => {
+  console.log(category);
   const [pageCount, setPageCount] = useState(0);
   const [page, setPage] = useState(0);
 
-  const { data: products, loading, error } = useFetch(`http://localhost:8000/product/dogs`);
+  const { data: products, loading, error } = useFetch(`http://localhost:8000/product/${category}`);
   console.log(products, loading);
 
   useEffect(() => {

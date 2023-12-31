@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import "../pages/Product1.css";
+import "../Pages/Product1.css";
 
 const ProductCards = (products) => {
     console.log("asdfasdf",products);

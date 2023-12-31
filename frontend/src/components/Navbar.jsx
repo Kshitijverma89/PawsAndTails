@@ -5,9 +5,10 @@ import './Navbar.css';
 import { AuthContext } from '../context/AuthContext';
  import React, { useRef, useEffect, useContext } from "react";
  import { useNavigate } from "react-router-dom";
+ import {NavLink} from "react-router-dom";
 
 
-const AppNavbar = () => {
+const AppNavbar = ({pass2}) => {
 
     const navigate = useNavigate();
     const { user, dispatch } = useContext(AuthContext);
@@ -35,11 +36,15 @@ const AppNavbar = () => {
               Adopt
             </Nav.Link>
             <NavDropdown title="Shop" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/Product1">Dogs</NavDropdown.Item>
+             <NavLink to="/Product1"><Button id="dogs" onClick={pass2}>Dogs</Button></NavLink>
+             <NavLink to="/Product1"><Button id="cats" onClick={pass2}>Cats</Button></NavLink>
+             <NavLink to="/Product1"><Button id="fishes" onClick={pass2}>Fishes</Button></NavLink>
+             <NavLink to="/Product1"><Button id="birds" onClick={pass2}>Birds</Button></NavLink>
+              {/* <NavDropdown.Item href="/Product1"></NavDropdown.Item>
               <NavDropdown.Item href="#action4">Cats</NavDropdown.Item>
               <NavDropdown.Item href="#action5">Fishes</NavDropdown.Item>
               <NavDropdown.Item href="#action6">Birds</NavDropdown.Item>
-              <NavDropdown.Item href="#action7">ExoticAnimals</NavDropdown.Item>
+              <NavDropdown.Item href="#action7">ExoticAnimals</NavDropdown.Item> */}
             </NavDropdown>
 
             <Nav.Link href="/About" className="nav-link-neon">

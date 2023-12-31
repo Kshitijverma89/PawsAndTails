@@ -15,12 +15,21 @@ import Footer from './components/Footer';
 import About from './Pages/About';
 import PlacedOrder from './Pages/PlacedOrder';
 import PaymentDetail from './Pages/PaymentDetail';
+import {useState} from "react";
 
 const App = () => {
+
+  const [category, setCategory]=useState();
+
+  const pass=(event)=>{
+    console.log(event.target.id);
+    setCategory(event.target.id);
+  }
+
   return (
     <div>
     <Router>
-      <AppNavbar/>
+      <AppNavbar pass2={pass}/>
     
     <Routes>
     <Route path="/" element={<Home />} />
@@ -30,7 +39,7 @@ const App = () => {
     <Route path="/PlacedOrder" element={<PlacedOrder />} />
       <Route path="/Cart/PaymentDetail/PlacedOrder" element={<PlacedOrder />} />
       <Route path="/UserProfile" element={<UserProfile/>} />
-      <Route path="/Product1" element={<ProductPage />} />
+      <Route path="/Product1" element={<ProductPage category={category} />} />
       <Route path="/Login" element={<Login/>} />
       <Route path="/Register" element={<Register/>} />
       <Route path="/ComingSoon" element={<ComingSoon/>} />
