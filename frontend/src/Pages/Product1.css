@@ -1,0 +1,52 @@
+
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: #555;
+  }
+  
+  .button-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  .button-primary:hover {
+    background-color: #0056b3;
+  }
+  
+
+  
+  .button-secondary {
+   
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+  }
+  
+  .button-secondary:hover {
+    background-color: #545b62;
+  } 
+
+  .quantity-buttons button {
+    margin-right: 3px; /* Adjust the margin as needed */
+  }
+
+  .space{
+    margin: 0 10px 
+  }
