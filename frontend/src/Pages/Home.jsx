@@ -24,11 +24,6 @@ const Home = () => {
       <FeaturedProducts />
       <Testimonial />
       <Footer />
-
-      <PaymentDetail />
-
-      <ProductPage />
-      <Cart />
     </div>
   );
 };
