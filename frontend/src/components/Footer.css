@@ -1,0 +1,57 @@
+/* Footer.css */
+.footer-social i {
+  width: 30px;
+  height: 30px;
+  background: #444141; ;
+  color: #444141; ;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: all 0.5s;
+  font-weight: 800;
+}
+
+.footer-social i:hover {
+  background: #ebe8e8;
+  color: #f0e7e7;
+}
+
+/* Update this CSS to make the footer white text */
+footer {
+  background-color: #444141; /* Light grey background color */
+  color: #fff; /* White text color */
+  padding: 20px 0;
+  font-size: 17px;
+}
+.red-btn {
+    background: #ed1b24;
+    border: 2px solid #ed1b24;
+    color: #fff;
+}
+
+.red-btn:hover {
+    background: #1c376c;
+    color: #fff;
+    border-color: #ffffff;
+}
+
+  /* Update this CSS to make all text inside the footer white */
+footer {
+  color: #fff; /* White text color */
+}
+
+/* Add this rule to make link color white in the bottom section */
+.footer-bottom a {
+  color: white;
+}
+
+/* Add this rule to make link color white for social icons */
+.footer-social a {
+  color: white;
+}
+
+/* Add this rule to make text color white for logo items */
+.footer-logo td {
+  color: white;
+}

@@ -1,0 +1,73 @@
+/* Navbar.css */
+
+/* Custom styling for the navbar */
+.navbar {
+    background-color: #343a40; /* Dark background color */
+    padding: 5px; /* Add padding for some breathing room */
+  }
+  
+  .navbar-brand {
+    color: #fff; /* White text color */
+    font-weight: bold;
+    font-size: 1.5rem; /* Adjust font size as needed */
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center; 
+    
+    /* justify-content: space-between;  */
+  }
+  
+  
+  .nav-link {
+    color: #ffcc00; /* White text color */
+    margin: 0 15px; 
+    font-weight: 500; /* Adjust font weight as needed */
+  }
+  
+  .nav-link:hover {
+    color: #ffcc00; /* Neon yellow on hover */
+  }
+  
+  /* Remove the styles for the search bar */
+  /* .form-inline {
+    margin-left: auto; /* Push the search bar to the right */
+  /* } */
+  
+  /* Style for the user and cart icons */
+  .nav-link svg {
+    margin-right: 5px; /* Add space between icon and text */
+  }
+  
+  /* Custom styling for the neon yellow links */
+  .nav-link-neon {
+    color: #ffff00; /* Neon yellow color */
+  }
+  
+  .nav-link-neon:hover {
+    color: #ffcc00; /* Darker yellow on hover */
+  }
+  #userCartNav {
+    display: flex; /* Use flexbox to align items in a row */
+    
+    margin-left: auto; /* Move the entire #userCartNav to the right */
+  }
+  
+  #userCartNav .nav-link {
+    margin: 0 10px; /* Adjust spacing between user and cart links */
+  }
+  .dropdown-menu {
+    background-color: #343a40; /* Dark background color for the dropdown menu */
+    border: none; /* Remove border */
+  }
+  
+  .dropdown-item {
+    color:  blue; /* White text color */
+    font-weight: 500; /* Adjust font weight as needed */
+  }
+  
+  .dropdown-item:hover {
+    background-color: blueviolet; /* Neon yellow background on hover */
+    color: #343a40; /* Dark text color on hover */
+  }

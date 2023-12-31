@@ -1,0 +1,12 @@
+.small-card {
+    width: 58rem;
+    height: 32rem;
+    margin: 0.5rem;
+    
+  }
+  
+  .small-image {
+    height: 20rem;
+    object-fit: cover;
+  }
+  
