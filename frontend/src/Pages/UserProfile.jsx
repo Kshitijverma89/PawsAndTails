@@ -6,7 +6,7 @@ const UserProfile = () => {
       <div style={styles.sidebar}>
         <div style={styles.profile}>
           <img
-            src="https://example.com/profile-image.jpg" // Replace with the URL of the user's profile image
+            src="https://image.pngaaa.com/730/4806730-middle.png" // Replace with the URL of the user's profile image
             alt="Profile"
             style={styles.profileImage}
           />
@@ -16,6 +16,12 @@ const UserProfile = () => {
           <button style={styles.sidebarButton} onClick={fetchUserOrders}>
             My Orders
           </button>
+          <button style={styles.sidebarButton} > 
+           Edit Profile
+          </button>
+          <button style={styles.sidebarButton} onClick={fetchUserInfo}>
+           Logout
+          </button>
         </div>
       </div>
       <div style={styles.mainContent}>
@@ -23,20 +29,29 @@ const UserProfile = () => {
         <h2>User Details</h2>
         <div style={styles.userData}>
           <label>Username:</label>
-          <input type="text" value="john_doe123" readOnly />
+          <input type="text" value="Anuja 111" readOnly style={styles.inputField} />
         </div>
         <div style={styles.userData}>
           <label>Location:</label>
-          <input type="text" value="City, Country" readOnly />
+          <input type="text" value="city" readOnly style={styles.inputField} />
+          <input type="text" value="country" readOnly style={styles.inputField} />
         </div>
-        {/* Add more user details input boxes as needed */}
+        <div style={styles.userData}>
+          <label>Mobile no.:</label>
+          <input type="text" value="Anuja 111" readOnly style={styles.inputField} />
+        </div>
+        <div style={styles.userData}>
+          <label>Email:</label>
+          <input type="text" value="Anuja 111" readOnly style={styles.inputField} />
+        </div>
+        {/* Add more user details input boxes acc to table anujaaaa*/}
       </div>
     </div>
   );
 };
 
 const fetchUserInfo = () => {
-  // Implement logic to fetch and display user info
+  // Implement logic to fetch and display user info  from db
   console.log('Fetching user info...');
 };
 
@@ -50,17 +65,23 @@ const styles = {
     display: 'flex',
     maxWidth: '800px',
     margin: '0 auto',
-    padding: '200px',
+    padding: '20px',
     fontFamily: 'Arial, sans-serif',
-    backgroundColor: '#2c3e50', // Dark grey background color
+    background: '#9673b9', // Lavender color
+    borderRadius: '10px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
   },
   sidebar: {
-    width: '100%',
-    marginRight: '100px',
-     
+    width: '30%',
+    marginRight: '20px',
+    background: '#c7b5e0', // Lavender color
+    borderRadius: '5px',
+    padding: '20px',
+    boxSizing: 'border-box',
   },
   profile: {
     marginBottom: '20px',
+    textAlign: 'center',
   },
   profileImage: {
     width: '100px',
@@ -71,10 +92,10 @@ const styles = {
   sidebarButton: {
     display: 'block',
     width: '100%',
-    padding: '70px',
+    padding: '10px',
     marginBottom: '10px',
     textAlign: 'left',
-    backgroundColor: '#34495e', // Black sidebar background color
+    background: '#9673b9', // Lavender color
     color: '#fff',
     border: 'none',
     borderRadius: '5px',
@@ -82,13 +103,21 @@ const styles = {
   },
   mainContent: {
     flex: '1',
-    backgroundColor: '#34495e', // Dark grey main content background color
+    background: '#c7b5e0', // Lavender color
     padding: '20px',
     borderRadius: '5px',
+    boxSizing: 'border-box',
   },
   userData: {
     marginBottom: '15px',
   },
+  inputField: {
+    width: '100%',
+    padding: '10px',
+    boxSizing: 'border-box',
+  },
 };
+
+
 
 export default UserProfile;

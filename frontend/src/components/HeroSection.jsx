@@ -26,7 +26,7 @@ const HeroSection = () => {
   // md={3}     
   return (
     <Container className="p-3 my-3 bg-dark text-white text-center">
-      <h1> <FaPaw />Welcome to Paws and Tails <FaPaw /> </h1>
+      <h1> <FaPaw /> Welcome to Paws and Tails <FaPaw /> </h1>
       <p> Discover a world of pets and accessories. <FaPaw /></p>
       <Row>
         {products.map((product, index) => (
@@ -35,7 +35,7 @@ const HeroSection = () => {
               <Card.Img variant="top" src={product.imageSrc} alt={product.name} />
               <Card.Body className="d-flex flex-column align-items-center justify-content-between">
                 <Card.Title className="font-weight-bold text-black mb-3">{product.name}</Card.Title>
-                <Button variant="primary"> <a href = "/Product1"> See More </a></Button>
+                <Button variant="primary"> <a href = "/Product1" style={{ color: 'white', textDecoration: 'none' }}> See More </a></Button>
               </Card.Body>
             </Card>
           </Col>

@@ -114,7 +114,7 @@ const FeaturedProducts = () => {
                   <Card.Body>
                     <Card.Title>Dogs <FaDog/></Card.Title>
                     <Card.Text>{dog.description}</Card.Text>
-                    <Button variant="primary" size="sm"> <a href ="/Product1" > Buy Now </a></Button>
+                    <Button variant="primary" size="sm"> <a href ="/Product1" style={{ color: 'white', textDecoration: 'none' }} > Buy Now </a></Button>
                   </Card.Body>
                 </Card>
               ))}
@@ -135,7 +135,7 @@ const FeaturedProducts = () => {
                   <Card.Body>
                     <Card.Title>Cats <FaCat/></Card.Title>
                     <Card.Text>{cat.description}</Card.Text>
-                    <Button variant="primary" size="sm"> <a href ="/Product1" > Buy Now </a></Button>
+                    <Button variant="primary" size="sm"> <a href ="/Product1" style={{ color: 'white', textDecoration: 'none' }} > Buy Now </a></Button>
                   </Card.Body>
                 </Card>
               ))}
@@ -157,7 +157,7 @@ const FeaturedProducts = () => {
               <Card.Body>
                 <Card.Title>Bird <FaDove/></Card.Title>
                 <Card.Text>{bird.description}</Card.Text>
-                <Button variant="primary" size="sm"> <a href ="/Product1" > Buy Now </a></Button>
+                <Button variant="primary" size="sm"> <a href ="/Product1" style={{ color: 'white', textDecoration: 'none' }} > Buy Now </a></Button>
               </Card.Body>
             </Card>
           ))}
@@ -180,7 +180,7 @@ const FeaturedProducts = () => {
               <Card.Body>
                 <Card.Title>Fish <FaFish/></Card.Title>
                 <Card.Text>{fish.description}</Card.Text>
-                <Button variant="primary" size="sm"> <a href ="/Product1" > Buy Now </a></Button>
+                <Button variant="primary" size="sm"> <a href ="/Product1" style={{ color: 'white', textDecoration: 'none' }}> Buy Now </a></Button>
               </Card.Body>
             </Card>
           ))}

@@ -16,6 +16,7 @@ import About from './Pages/About';
 import PlacedOrder from './Pages/PlacedOrder';
 import PaymentDetail from './Pages/PaymentDetail';
 import {useState} from "react";
+import AdminDashboard from './Pages/AdminDashboard';
 
 const App = () => {
 
@@ -45,6 +46,7 @@ const App = () => {
       <Route path="/ComingSoon" element={<ComingSoon/>} />
       <Route path="/About" element={<About/>} />
       <Route path="/Cart/PaymentDetail" element={<PaymentDetail/>} />
+      <Route path="/AdminDashboard" element={<AdminDashboard/>} />
 
       
   

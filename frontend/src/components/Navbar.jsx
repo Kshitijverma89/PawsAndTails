@@ -11,7 +11,7 @@ import { AuthContext } from '../context/AuthContext';
 const AppNavbar = ({pass2}) => {
 
     const navigate = useNavigate();
-    const { user, dispatch } = useContext(AuthContext);
+    const { user,admin, dispatch } = useContext(AuthContext);
 
     const logout = () => {
         dispatch({ type: "LOGOUT" });
@@ -68,7 +68,7 @@ const AppNavbar = ({pass2}) => {
             <FaUser /> Account
           </Nav.Link> */}
 
-           <div>
+          {/* <div>
             {
               user ? (
                 <>
@@ -87,7 +87,34 @@ const AppNavbar = ({pass2}) => {
                 </>
               )
             }
-          </div> 
+          </div> */}
+          <div>
+            {
+              user ? (  
+                <>
+                 
+                  <NavDropdown title={user.username} id="basic-nav-dropdown">
+                  <NavDropdown.Item onClick={logout} >Logout</NavDropdown.Item>
+                  <NavDropdown.Item href="/UserProfile">Profile</NavDropdown.Item>
+                  
+                  </NavDropdown>
+                </>
+              ) : (admin ? (
+                <>
+                  <NavDropdown title={user.admin} id="basic-nav-dropdown">
+                  <NavDropdown.Item onClick={logout} >Logout</NavDropdown.Item>
+                  <NavDropdown.Item href="/AdminDashboard">Admin Dashboard</NavDropdown.Item>
+                  
+                  </NavDropdown>
+                </>
+) : (
+                <NavDropdown title="Account" id="basic-nav-dropdown">
+                <NavDropdown.Item href="./Login">Login</NavDropdown.Item>
+                <NavDropdown.Item href="./Register">Sign Up</NavDropdown.Item>
+                </NavDropdown>
+              )  )
+            }
+          </div>
 
               
 

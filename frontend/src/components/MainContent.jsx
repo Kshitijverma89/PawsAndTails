@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
+import { FaPaw} from 'react-icons/fa';
 
 import './MainContent.css';
 
@@ -29,12 +30,10 @@ const MainContent = () => {
           <img src={slide.imageUrl} className="d-block w-100" alt={`Slide ${index + 1}`} />
         <Carousel.Caption>
           <div className="caption-text left-align">
-            <h3 className="big-bold header">Love My Pets</h3>
-            <p>
-              Providing Trained Service Animals to Individuals with Disabilities
-              <br />
-              Love My Dog is a nonprofit organization with a primary mission to provide trained service animals to individuals with disabilities. We fund these services through a range of training programs and fundraising initiatives, such as our product line and container homes.
-            </p>
+          <h3 className="big-bold header" style={{ fontWeight: 'bold', fontSize: '3rem', background: 'linear-gradient(45deg, #fbd63d, #f8ac1a)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textAlign: 'justify' }}>
+          Paws and Tail: Where Love Meets  Wagging Tails   <FaPaw/>  
+        </h3>
+           
           </div>
         </Carousel.Caption>
       </Carousel.Item>

@@ -98,7 +98,6 @@ const Cart = () => {
                 <th>Price</th>
                 <th>Quantity</th>
                 <th>Total</th>
-                <th>Seller</th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -125,7 +124,6 @@ const Cart = () => {
                     />
                   </td>
                   <td>Rs.{item.price * item.quantity}</td>
-                  <td>{item.seller}</td>
                   <td>
                     <Button variant="danger" onClick={() => removeProduct(item.id)}>
                       Remove
