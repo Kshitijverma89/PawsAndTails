@@ -1,0 +1,37 @@
+.sec{
+    background-color: #181B1D;
+}
+
+.conn{
+    background-color: #181B1D;
+}
+.container{
+    /* background-color: #181B1D; */
+    color: var(--text-color);
+}
+
+.container  h2{
+    
+    color: white;
+
+}
+.mission__container{
+ 
+    color: var(--text-color);
+}
+
+.team__container{
+ 
+    color: var(--text-color);
+}
+
+.heading{
+
+    text-align: center;
+}
+
+.content{
+    text-align: center;
+    padding: auto;
+    margin-top: 15px;
+}

@@ -1,0 +1,59 @@
+/* src/components/productpage/ProductPage.css */
+.product-page {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 20%; /* Adjust width as needed */
+    background-color: #f0f0f0; /* Add background color */
+    padding: 20px;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .product-header {
+    margin-bottom: 20px;
+  }
+  
+  .product-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    width: calc(50% - 20px); /* Adjust width and margin as needed */
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image {
+    width: 40%; /* Adjust width as needed */
+    overflow: hidden;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-description {
+    padding: 20px;
+  }
+  
+  .buy-now-btn {
+    background-color: yellow; /* Set your desired color */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

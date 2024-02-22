@@ -1,0 +1,35 @@
+/* PaymentDetail.css */
+
+/* Set the background color of the entire page to grey */
+body {
+    background-color: #181B1D; /* Use the grey color code of your choice */
+  }
+  
+  /* Set the background color of the container to black */
+  
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .col-4 {
+    width: 25%;
+  }
+  
+  .col-8 {
+    width: 75%;
+  }
+  
+  .btn1 {
+    margin-top: 10px;
+  }
+  
+  .txt-centre {
+    text-align: center;
+  }
+  
+  .form-row {
+    margin-bottom: 15px;
+  }
+ 
+  

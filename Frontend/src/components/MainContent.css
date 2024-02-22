@@ -1,0 +1,40 @@
+/* MainContent.css */
+
+/* Adjust the Carousel height to fit the screen */
+.carousel {
+    height: 100vh; /* 100% of the viewport height */
+}
+
+/* Style the Carousel items for full-width images */
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%; /* Make images fill the entire width of the carousel */
+    max-height: 100vh; /* Limit the height to the viewport height */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+/* Optionally, add some spacing or other styles as needed */
+
+.caption-text {
+    top: 1%; /* Adjust the top position as needed */
+    left: 5px; /* Adjust the left position as needed */
+    text-align: left;
+    color: yellow; /* Yellow color for the caption text */
+}
+
+.left-align {
+    text-align: left;
+}
+
+.big-bold {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Apply black color to headers with the big-bold class */
+.big-bold.header {
+    color: black;
+}
